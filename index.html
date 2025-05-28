@@ -8,13 +8,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div id="header">
+
+    <div class="">
         <div class="container">
-            <nav>
-            <h1 class="logo"><span class="secondary">A</span>lamgir</h1>
+            <nav class="navbar">
+            <h1 class="logo"><span class="secondary">A</span>lam<span class="third">g</span>ir</h1>
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
+                <li><a  href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -22,56 +24,250 @@
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-
-        <div class="header-text">
-            <p>Full Stack Developer</p>
-            <h1>Hi, I'm <span class="secondary">Alamgir</span><br>from Dhaka,<br> Bangladesh.</h1>
         </div>
+        <div class="container header hero-section">
+            <div class="header-text">
+                <h1>Hello,</h1>
+                <h1>This is <span class="secondary">Alamgir</span> I'm a Professional <span class="third">Software Developer</span>.</h1>
+                <div class="hero-cv-btn">
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+            <div class="header-image">
+                <img class="hero-image" src="images/hero-image.svg" alt="">
+            </div>
         </div>
     </div>
     <div id="about">
         <div class="container">
+            <div class="title-box">
+                <button class="section-title">About me</button>
+            </div>
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/74f3b8a8-9197-4602-a6d5-ae6fac7af5cc.jpg" alt="">
+                    <img id="my-image" style="border-radius: 50%;" src="images/hee.png" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="section-title">About me</h1>
-                    <p>I am an ambitious and highly motivated undergraduate Computer Science and Engineering student with a strong foundation in software development and a passion for problem-solving. As a competitive programmer, I thrive on challenges that test my logical and algorithmic thinking.</p>
-                    <div class="tab-titles">
-                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    <p id="about-description">Hi, I’m Alamgir Hossain — an ambitious and highly motivated undergraduate student pursuing a BSc (Hons.) in Computer Science and Engineering.
+
+I specialize in software development with a strong passion for problem-solving and competitive programming. I thrive on challenges that push the limits of my logical and algorithmic thinking.
+
+I’m a quick learner with a self-driven mindset. Exploring new technologies is something I genuinely enjoy, and I’m always looking to sharpen my skills across the full stack of web application development.
+
+From frontend to backend, I love building open and accessible solutions for the web — and I’m deeply passionate about contributing to a more connected digital world.</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/alamgir23525/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/alamgir65"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alamgir-hossain-a64265270/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web development</span><br>Building Websites</li>
-                            <li><span>App development</span><br>Building Android/iOS apps</li>
-                        </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- THis is my skills section  -->
+     <div id="skills">
+        <div class="container">
+            <div class="title-box">
+                <p class="section-title">
+                    Skills
+                </p>
+            </div>
+            <div>
+                <section class="skills-section">
+                    <div class="skills-marquee">
+                        <div class="skills-track">
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>                                
+                                <p class="skill-name">JavaScript</p>
+                            </div>
+                            
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/color/48/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>                                
+                                <p class="skill-name">C++</p>
+                            </div>
+                            
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/color/48/c-programming.png" alt="c-programming"/>                               
+                                 <p class="skill-name">C</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/nolan/64/laravel.png" alt="laravel"/>                               
+                                 <p class="skill-name">Laravel</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/external-algorithms-data-analytics-flaticons-flat-circular-flat-icons.png" alt="external-algorithms-data-analytics-flaticons-flat-circular-flat-icons"/>
+                                 <p class="skill-name">DSA</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>                                 
+                                <p class="skill-name">React</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                                <p class="skill-name">HTML</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-cascading-style-sheets-language-used-for-describing-the-presentation-of-a-document-logo-color-tal-revivo.png" alt="external-cascading-style-sheets-language-used-for-describing-the-presentation-of-a-document-logo-color-tal-revivo"/>
+                                <p class="skill-name">CSS</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/nolan/64/php--v2.png" alt="php--v2"/>
+                                <p class="skill-name">PHP</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/external-those-icons-flat-those-icons/48/external-MySQL-programming-and-development-those-icons-flat-those-icons.png" alt="external-MySQL-programming-and-development-those-icons-flat-those-icons"/>
+                                <p class="skill-name">MySQL</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
+                                <p class="skill-name">Tailwind</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/color-glass/48/bootstrap.png" alt="bootstrap"/>
+                                <p class="skill-name">Bootstrap</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/color/48/git.png" alt="git"/>
+                                <p class="skill-name">Git</p>
+                            </div>
+                            <div class="skill">
+                                <img width="58" height="58" src="https://img.icons8.com/color/48/figma--v1.png" alt="figma--v1"/>
+                                <p class="skill-name">Figma</p>
+                            </div>
+
+    
+                        <!-- <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Laravel</span>
+                        <span>Node.js</span>
+                        <span>MySQL</span>
+                        <span>Git</span>
+                        <span>Tailwind CSS</span>
+                        <span>Problem Solving</span>
+                        <!-- Repeat to make it loop smoothly -->
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span> -->
+                        <!-- and so on -->
+                        </div>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023 - Present</span><br>competitive Programmer</li>
-                            <li><span>2023 - 2024</span><br>Internship at SST Innovation.</li>
-                            <li><span>2025 - present</span><br>Full Stack developer at Fiver.</li>
-                        </ul>
+        </section>
+            </div>
+        </div>
+     </div>
+
+    <!-- Here i will shift my education  -->
+    <div id="services">
+        <div class="container">
+            <div class="title-box">
+                <h1 class="section-title">Educations</h1>
+            </div>
+            <div class="edu-skill">
+                <div class="edu-image">
+                <div>
+                    <img width="100%" src="images/10673808.jpg" alt="">
+                </div>
+            </div>
+            <div class="education">
+                
+                <div class="degree border-only">
+                    <p class="time">
+                        2023  -  Present
+                    </p>
+                    <div class="degree-box">
+                        <div>
+                            <i id="degree-icon" class="fa-solid fa-user-graduate fa-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="degree-name">
+                                BSc in Computer Science and Engineering.
+                            </h3>
+                            <p class="institute">
+                                National University of Bangladesh.
+                            </p>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2018 - 2020</span><br>SSC at Char jabber Union High School.</li>
-                            <li><span>2020 - 2022</span><br>HSC at Saikat Govt. College.</li>
-                            <li><span>2023 - present</span><br>BSc in Computer Science and Engineering at ISTT.</li>
-                        </ul>
+                </div>
+                <div class="degree border-only">
+                    <p class="time">
+                        2020  -  2022
+                    </p>
+                    <div class="degree-box">
+                        <div>
+                            <i id="degree-icon" class="fa-solid fa-user-graduate fa-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="degree-name">
+                                Higher Secondary Certificate (HSC).
+                            </h3>
+                            <p class="institute">
+                                Saikat Government College.
+                            </p>
+                        </div>
                     </div>
+                </div>
+                <div class="degree border-only">
+                    <p class="time">
+                        2018  -  2020
+                    </p>
+                    <div class="degree-box">
+                        <div>
+                            <i id="degree-icon" class="fa-solid fa-user-graduate fa-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="degree-name">
+                                Secondary School Certificate (SSC).
+                            </h3>
+                            <p class="institute">
+                                Char Jabber Union High School.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div id="experience">
+        <div class="container">
+            <div class="title-box">
+                <h1 class="section-title">My experience</h1>
+            </div>
+            <div class="services-list">
+                <div>
+                    <img src="images/codeforces.png" width="80" alt="">
+                    <h2 id="codeforcesRank"></h2>
+                    <p id="codeforcesDescription"></p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2 id="codechefRating"></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error nobis, fugiat iure, impedit reiciendis ut consequatur recusandae numquam magni, exercitationem veniam quos nisi porro sed quas at cum ipsam?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web application</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error nobis, fugiat iure, impedit reiciendis ut consequatur recusandae numquam magni, exercitationem veniam quos nisi porro sed quas at cum ipsam?</p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
-
     <div id="services">
         <div class="container">
-            <h1 class="section-title">My services</h1>
+            <div class="title-box">
+                <h1 class="section-title">My services</h1>
+            </div>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -97,7 +293,9 @@
 
     <div id="projects">
         <div class="container">
-            <h1 class="section-title">My Projects</h1>
+            <div class="title-box">
+                <h1 class="section-title">My Projects</h1>
+            </div>
             <div class="projects-list">
                 <div class="project">
                     <img src="images/work-1.png" alt="">
@@ -138,9 +336,11 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="section-title">
+                    <div class="title-box">
+                        <h1 class="section-title">
                         Contact Me
                     </h1>
+                    </div>
                     <p><i class="fa-solid fa-paper-plane"></i>alamgirhossain23525@istt.edu.bd</p>
                     <p><i class="fa-solid fa-phone"></i>01868194925</p>
                     <div class="social-icon">
@@ -208,6 +408,107 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script>
+        async function getCodeforcesData(handle) {
+            try {
+                // Fetch user info
+                let userInfoResponse = await fetch(`https://codeforces.com/api/user.info?handles=${handle}`);
+                let userInfo = await userInfoResponse.json();
+    
+                // Fetch user submissions
+                let submissionsResponse = await fetch(`https://codeforces.com/api/user.status?handle=${handle}`);
+                let submissions = await submissionsResponse.json();
+    
+                if (userInfo.status === "OK" && submissions.status === "OK") {
+                    let user = userInfo.result[0];
+    
+                    // Extract required data
+                    let rating = user.rating;
+                    let maxRating = user.maxRating;
+                    let rank = user.rank;
+                    let avatar = user.avatar;
+                    document.getElementById('codeforcesRank').innerHTML = `${rank}`;
+                    
+                    // Count total solved problems (contest + practice)
+                    let solvedProblems = new Set();
+                    for (let submission of submissions.result) {
+                        if (submission.verdict === "OK") {
+                            let problemId = submission.problem.contestId 
+                                            ? submission.problem.contestId + "-" + submission.problem.index
+                                            : submission.problem.name;  // If not a contest, use problem name
+                            solvedProblems.add(problemId);
+                        }
+                    }
+    
+                    let totalSolved = solvedProblems.size;
+    
+                    console.log(`Handle: ${handle}`);
+                    console.log(`Rating: ${rating}, Rank: ${rank}, Max Rating: ${maxRating}`);
+                    console.log(`Total Problems Solved: ${totalSolved}`);
+                    console.log(`Avatar: ${avatar}`);
+                    document.getElementById('codeforcesDescription').innerHTML = `I Solved ${totalSolved}+ Problems on Codeforces in different algorithms like DP, Greedy, Graph, Math, Graphs, Number theory, etc.`;
+                } else {
+                    console.log("Error fetching data!");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+        // Call function with your Codeforces handle
+        getCodeforcesData("alamgir65");
+    </script>
+    <script>
+        const fetchCodeChefProfile = async (username) => {
+            try {
+                const response = await fetch(`https://www.codechef.com/users/${username}`);
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.status}`);
+                }
+                const data = await response.text();
+                console.log(data); // CodeChef doesn't return JSON, so parsing HTML may be required
+            } catch (error) {
+                console.error("Failed to fetch CodeChef profile:", error);
+            }
+        };
+
+        const fetchCodeChefRatings = async (username) => {
+            try {
+                const response = await fetch(`https://www.codechef.com/api/ratings/all/${username}`);
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log(data);
+            } catch (error) {
+                console.error("Failed to fetch CodeChef ratings:", error);
+            }
+        };
+
+        const fetchCodeChefSubmissions = async (username) => {
+            try {
+                const response = await fetch(`https://www.codechef.com/api/submissions/${username}`);
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log(data);
+            } catch (error) {
+                console.error("Failed to fetch CodeChef submissions:", error);
+            }
+        };
+
+        // Example Usage
+        const username = "alamgir65"; // Replace with actual username
+        fetchCodeChefProfile(username);
+        console.log(fetchCodeChefProfile(username));
+        fetchCodeChefRatings(username);
+        fetchCodeChefSubmissions(username);
+        fetchCodeChefRatings("alamgir65")
+            .then(data => console.log(data))
+            .catch(error => console.error("Error fetching rating:", error));
+        document.getElementById('codechefRating').innerHTML = `Rating: ${fetchCodeChefRatings(username).rating}`;
+        console.log(fetchCodeChefRatings(username));
+    </script>
 </body>
 </html>
 
