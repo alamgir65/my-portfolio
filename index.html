@@ -41,7 +41,7 @@
     <div id="about">
         <div class="container">
             <div class="title-box">
-                <button class="section-title">About me</button>
+                <p class="section-title">About me</p>
             </div>
             <div class="row">
                 <div class="about-col-1">
@@ -137,23 +137,6 @@ From frontend to backend, I love building open and accessible solutions for the 
                                 <img width="58" height="58" src="https://img.icons8.com/color/48/figma--v1.png" alt="figma--v1"/>
                                 <p class="skill-name">Figma</p>
                             </div>
-
-    
-                        <!-- <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>Laravel</span>
-                        <span>Node.js</span>
-                        <span>MySQL</span>
-                        <span>Git</span>
-                        <span>Tailwind CSS</span>
-                        <span>Problem Solving</span>
-                        <!-- Repeat to make it loop smoothly -->
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span> -->
-                        <!-- and so on -->
                         </div>
                     </div>
         </section>
@@ -235,7 +218,7 @@ From frontend to backend, I love building open and accessible solutions for the 
      </div>
 
     <!-- Here i will shift my education  -->
-    <div id="services">
+    <div id="education">
         <div class="container">
             <div class="title-box">
                 <h1 class="section-title">Educations</h1>
@@ -309,7 +292,7 @@ From frontend to backend, I love building open and accessible solutions for the 
     </div>
 
 
-    <div id="experience">
+    <!-- <div id="experience">
         <div class="container">
             <div class="title-box">
                 <h1 class="section-title">My experience</h1>
@@ -335,7 +318,7 @@ From frontend to backend, I love building open and accessible solutions for the 
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id="services">
         <div class="container">
             <div class="title-box">
@@ -343,22 +326,23 @@ From frontend to backend, I love building open and accessible solutions for the 
             </div>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Build Websites</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error nobis, fugiat iure, impedit reiciendis ut consequatur recusandae numquam magni, exercitationem veniam quos nisi porro sed quas at cum ipsam?</p>
-                    <a href="#">Learn More</a>
+                    <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-web-design-marketing-agency-flaticons-lineal-color-flat-icons-2.png" alt="external-web-design-marketing-agency-flaticons-lineal-color-flat-icons-2"/>
+                    <h2>Web Design</h2>
+                    <p>Eye-catching, responsive web designs that work perfectly on all devices — mobile, tablet, and desktop.
+                    </p>
+                    <a href="#contact" class="">Take Service</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error nobis, fugiat iure, impedit reiciendis ut consequatur recusandae numquam magni, exercitationem veniam quos nisi porro sed quas at cum ipsam?</p>
-                    <a href="#">Learn More</a>
+                    <img width="64" height="64" src="https://img.icons8.com/pulsar-gradient/48/window-settings.png" alt="window-settings"/>
+                    <h2>Web Development</h2>
+                    <p>Clean and fresh issue free code to make your website dynamic perfectly.</p>
+                    <a href="#contact" class="">Take Service</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Web application</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error nobis, fugiat iure, impedit reiciendis ut consequatur recusandae numquam magni, exercitationem veniam quos nisi porro sed quas at cum ipsam?</p>
-                    <a href="#">Learn More</a>
+                    <img width="64" height="64" src="https://img.icons8.com/color/48/psd--v1.png" alt="psd--v1"/>
+                    <h2>PSD to HTML</h2>
+                    <p>I'll convert your PSD file to pixel perfect HTML design. All type of scratch to HTML is included like img to HTML, XD to HTML Etc</p>
+                    <a href="#contact" class="">Take Service</a>
                 </div>
             </div>
         </div>
@@ -405,6 +389,24 @@ From frontend to backend, I love building open and accessible solutions for the 
         </div>
     </div>
 
+
+    <div id="achivements">
+        <div class="container">
+            <div class="title-box">
+                <div class="section-title">Achivements and Certifications</div>
+            </div>
+            <div class="certificates">
+                <img class="mySlider" src="images/icpc3.PNG"  alt="" width="100%">
+                <img class="mySlider" src="images/Capture.PNG"  alt="" width="100%">
+                <img class="mySlider" src="images/icpc4.PNG"  alt="" width="100%">
+                <img class="mySlider" src="images/IMG_20240317_231202_400.jpg"  alt="" width="100%">
+
+                <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="display-right" onclick="plusDivs(1)">&#10095;</button>   
+            </div>
+        </div>
+    </div>
+
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -439,6 +441,29 @@ From frontend to backend, I love building open and accessible solutions for the 
             <p>copyright © Alamgir made with <i class="fa-solid fa-heart"></i> by alamgirhossain23525@istt.edu.bd</p>
         </div>
     </div>
+
+    <button id="scrollToTopBtn">
+     ↑
+    </button>
+
+    <script>
+    const scrollBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    });
+
+    scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+        });
+    });
+</script>
 
     <script>
         var tabLinks = document.getElementsByClassName('tab-link');
@@ -582,6 +607,30 @@ From frontend to backend, I love building open and accessible solutions for the 
         document.getElementById('codechefRating').innerHTML = `Rating: ${fetchCodeChefRatings(username).rating}`;
         console.log(fetchCodeChefRatings(username));
     </script>
+    <!-- for slider  -->
+     <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n){
+            slideIndex += n;
+            showDivs(slideIndex);
+        }
+
+        function showDivs(n){
+            var x = document.getElementsByClassName('mySlider');
+            if(x.length < n) {
+                slideIndex = 1;
+            }
+            if(n < 1){
+                slideIndex = x.length;
+            }
+            for(var i=0;i<x.length;i++){
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+     </script>
 </body>
 </html>
 
