@@ -223,6 +223,51 @@ nav ul li a:hover::after{
 }
 
 
+/* This is competitive programming section  */
+.platforms{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.platform{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--third-color);
+    padding: 25px 35px;
+    border-radius: 10px;
+    background: #0a0d35;
+    width: 320px;
+    height: 150px;
+}
+.platform-name{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+.user-name{
+    font-size: 19px;
+    color: #fff;
+    margin: 7px 0;
+    font-weight: 500;
+}
+.cp-btn{
+    background: none;
+    border:  none;
+    color: #fff;
+}
+.cp-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+.cp-btn a i{
+    margin-left: 5px;
+}
+
+
 /* Education & skills all css */
 .edu-skill{
     display: flex;
@@ -575,6 +620,11 @@ nav .fa-solid{
         font-size: 14px;
     }
 
+
+    /* cp  */
+    .platforms{
+        justify-content: center;
+    }
     .edu-skill{
         flex-direction: column;
     }
