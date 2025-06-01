@@ -124,9 +124,31 @@ nav ul li a:hover::after{
     background-color: #0f172a;
 }
 #my-image{
-    border: 2px solid var(--third-color);
+    border: 3px solid var(--third-color);
     margin-bottom: 40px;
 }
+
+.exp-img {
+  transition: transform 0.3s ease;
+}
+
+.exp-img:hover {
+  transform: scale(1.1);
+}
+.exp-img {
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
 .title-box{
     display: flex;
     justify-content: center !important;
